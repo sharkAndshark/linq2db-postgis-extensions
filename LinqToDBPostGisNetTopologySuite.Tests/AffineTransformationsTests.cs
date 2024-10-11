@@ -16,8 +16,8 @@ namespace LinqToDBPostGisNetTopologySuite.Tests
         {
             using (var db = new PostGisTestDataConnection(TestDatabaseConnectionString))
             {
-                db.TestGeometries.Delete();
-                db.TestGeographies.Delete();
+                db.TestGeometries.Truncate();
+                db.TestGeographies.Truncate();
             }
         }
 
